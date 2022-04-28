@@ -10,6 +10,7 @@ class UserListingModel {
   String? category;
   String? description;
   String? imageURL;
+  String? Listing_time;
 
   UserListingModel(
       {this.uid,
@@ -17,7 +18,8 @@ class UserListingModel {
       this.itemName,
       this.category,
       this.description,
-      this.imageURL});
+      this.imageURL,
+      this.Listing_time});
 
   //get data from server
   factory UserListingModel.fromMap(map) {
@@ -38,7 +40,8 @@ class UserListingModel {
       'itemName': itemName,
       'category': category,
       'description': description,
-      'imageURL': imageURL
+      'imageURL': imageURL,
+      'ListingTime': Listing_time
     };
   }
 }
